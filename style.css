@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url('/HP\ wallpaper.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex; 
+    list-style: none;
+    gap: 20px;
+}
+
+li {
+    display: flex;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.nav__title {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-left: 85px;
+}
+
+.nav__bar {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+}
