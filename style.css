@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body {
+.wallpaper {
     margin: 0;
     height: 100vh;
     background-image: url('/HP\ wallpaper.jpg');
@@ -12,37 +12,115 @@ body {
     background-repeat: no-repeat;
 }
 
-section {
-    width: 100%;
-}
-
-nav {
+#pageContainer {
+    min-height: 100vh;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
 }
 
-ul {
-    display: flex; 
-    list-style: none;
-    gap: 20px;
+h1 {
+    font-size: 45px;
+    z-index: 2;
 }
 
-li {
-    display: flex;
-    font-size: 30px;
-    margin: 10px;
-}
-
-.nav__title {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    margin-left: 85px;
-}
+/* NAVIGATION */
 
 .nav__bar {
+    height: 396px;
+    background-color: grey;    
+}
+
+.nav__header {
+    display: flex;
+    width: 100%;
+    z-index: 2;
+}
+
+.nav__logo {
+    display: flex;
+}
+
+
+.logo {
+    height: 150px;
+    width: 150px;
+    margin-left: 30px;
+    margin-top: 30px;
+    padding: 8px;
+    border-radius: 8px;
+    z-index: 2;
+}
+
+.nav__links {
+    display: block;
+    justify-content:flex-end;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: 40px;
+    z-index: 2;
+}
+
+.nav__link--anchor {
+    padding: 8px;
+    font-size: 35px;
+    color: rgb(0, 0, 0);    
+    margin: 16px;
+}
+
+.nav__link--anchor-primary {
+    padding: 8px;
+    font-size: 35px;
+    color: rgb(0, 0, 0);    
+    background:linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+    margin: 16px;
+    border-radius: 50px;
+    padding: 18px;
+}
+
+.background {
+    background-image:url(/HP2wallpaper.jpg);
+    object-fit: contain;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 405px;
+    opacity: calc(25%);
+    position: relative;
+    bottom: 374px;
+    z-index: 1;
+}
+
+.searchBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.search {
+    margin-top: 22px;
+    padding: 20px;
+    border-radius: 16px;
+    width: 100%;
+    margin-right: 180px;
+}
+
+.searchWrap {
+    position: relative;
+    z-index: 2;
+}
+
+.fa-brands {
+    color: rgb(114, 35, 35);
+    font-size: 40px;
     position: absolute;
-    top: 40px;
-    right: 20px;
+    left: 325px;
+    top: 30px;
+}
+
+.movieList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
