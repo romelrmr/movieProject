@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HP Series</title>
     <link rel="stylesheet" href="/style.css">
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
     <script src="https://kit.fontawesome.com/9f094611fb.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -13,7 +13,7 @@
         <div class="nav__bar">
             <div class="nav__header">
                 <div class="nav__logo">
-                    <img class="logo" src="HP houses.png" alt="hpHouses">
+                    <img class="logo" src="/movieLogo.png" alt="hpHouses">
                 </div>
                 <div class="nav__links">
                     <a href="/index.html" class="
@@ -28,17 +28,17 @@
                 </div>
             </div>
             <div class="searchBar">
-                <h1>Browse for Series</h1>
+                <h1>Browse Movies</h1>
                 <div class="searchWrap">
-                    <input class="search" type="text" placeholder="Search by Title">
-                    <i class="fa-brands fa-searchengin"></i>
+                    <input id="searchInput" class="search" type="text" placeholder="Search by Title">
+                    <button id="searchBtn">
+                        <i class="fa-brands fa-searchengin"></i>
+                    </button>
                 </div>
             </div>
             <div class="background"></div>
         </div>
     </nav>
-    <div class="movieList">
-        <div class="movie-list__container"></div>
-    </div>
+    <div class="movieList"></div>
 </body>
 </html>

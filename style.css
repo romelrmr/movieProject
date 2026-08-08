@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: rgb(180, 174, 162);
+}
 .wallpaper {
     margin: 0;
     height: 100vh;
@@ -55,7 +58,6 @@ h1 {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-top: 150px;
 }
 
 .nav__links {
@@ -85,12 +87,14 @@ h1 {
 }
 
 .background {
-    background-image:url(/HP2wallpaper.jpg);
+    background-image:url(/moviesWallpaper.jpg);
     object-fit: contain;
     background-attachment: fixed;
-    background-position: center;
+    background-size: 100% 100%;
+    background-position: top-center;
     background-repeat: no-repeat;
-    height: 405px;
+    width: 100%;
+    height: 412px;
     opacity: calc(25%);
     position: relative;
     bottom: 374px;
@@ -102,7 +106,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 .search {
@@ -115,7 +119,14 @@ h1 {
 
 .searchWrap {
     position: relative;
-    z-index: 2;
+    z-index: 10;
+}
+
+#searchBtn {
+    position: relative;
+    z-index: 20;
+    cursor: pointer;
+    pointer-events: auto;
 }
 
 .fa-brands {
@@ -123,7 +134,7 @@ h1 {
     font-size: 40px;
     position: absolute;
     left: 325px;
-    top: 30px;
+    bottom: 23px;
 }
 
 .movie-list__container {
