@@ -18,7 +18,7 @@ body {
 .wallpaper {
     margin: 0;
     height: 100vh;
-    background-image: url('/HP\ wallpaper.jpg');
+    background-image: url("./HP\ wallpaper.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -120,7 +120,7 @@ h1 {
 }
 
 .background {
-    background-image:url(/moviesWallpaper.jpg);
+    background-image:url("./moviesWallpaper.jpg");
     object-fit: contain;
     background-attachment: fixed;
     background-size: 100% 100%;
