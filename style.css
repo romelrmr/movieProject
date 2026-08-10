@@ -29,6 +29,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    position: relative;
 }
 
 h1 {
@@ -120,15 +121,17 @@ h1 {
 
 .background {
     background-image:url("./moviesWallpaper.jpg");
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: top center;
     background-repeat: no-repeat;
     width: 100%;
-    min-height: 412px;
+    height: 412px;
     opacity: calc(25%);
-    position: relative;
+    position: absolute;
     margin-top: -374px;
-    z-index: 1;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
 }
 
 .searchBar {
