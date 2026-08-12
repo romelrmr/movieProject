@@ -9,11 +9,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    overflow-x: hidden ;
-}
-
-.movieList {
-    flex: 1;
+    overflow-x: hidden;
 }
 
 .wallpaper {
@@ -29,8 +25,6 @@ body {
     height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    position: relative;
 }
 
 h1 {
@@ -173,16 +167,55 @@ h1 {
     bottom: 23px;
 }
 
-.movie-list__container {
+.sortContainer {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    color: rgb(92, 41, 5);
-    font-size: 26px;
+    gap: 10px;
+    margin-top: 55px;
+    font-size: 25px;
+    z-index: 1;
+}
+
+#sortMovies {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    font-size: 16px;
+    background: white;
+}
+
+.movieList {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
     padding: 20px;
+    box-sizing: border-box;
+    margin-top: 60px;
+    flex: 0;
+}
+
+.movie-list__container {
+    width: 240px;
+    flex: 0 0 240px;
+    overflow: visible;
+}
+
+.movie-list__container img {
+    display: block;
+    width: 240px;
+    height: auto;
+    object-fit: contain;
 }
 
 /*FOOTER*/
+
+footer {
+    margin-top: auto;
+}
 
 .footerContainer {
     display: flex;
@@ -190,7 +223,6 @@ h1 {
     align-items: center;
     background-color: antiquewhite;
     padding: 8px;
-    margin-top: auto;
 }
 
 /* Small Phones, Tablets, Large smart phones */
