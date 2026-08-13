@@ -264,6 +264,16 @@ footer {
     .nav__bar {
         width: 100%;
         max-width: 100%;
+    }
+
+    .sortContainer {
+        margin: 0 auto;
+    }
+
+    .movie-list__container, p {
+        font-size: 20px;
+        text-align: center;
+    }
 }
 
 /* Small Phone */
