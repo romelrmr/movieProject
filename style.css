@@ -246,8 +246,34 @@ footer {
 }
 
 @media (max-width: 600px) {
+    html, body {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+
+    #pageContainer {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav__bar {
+        width: 100%;
+        max-width: 100%;
+    }
+
     .searchBar {
-        width: 90%;
+        width: 100%;
+        max-width: 100%;
+        padding: 0 20px;
         margin: 0 auto;
     }
 
@@ -258,6 +284,7 @@ footer {
 
     #searchInput {
         width: 100%;
+        max-width: 100%;
         height: 55px;
         padding: 0 55px 0 20px;
         box-sizing: border-box;
@@ -282,6 +309,8 @@ footer {
 
     .movieList {
         display: grid;
+        width: 100%;
+        max-width: 100%;
         grid-template-columns: repeat(2, 1fr);
         gap:15px;
         padding: 15px;
@@ -289,6 +318,7 @@ footer {
 
     .movie-list__Container {
         width: 100%;
+        min-width: 0;
     }
 
     .movie-list__Container img {
