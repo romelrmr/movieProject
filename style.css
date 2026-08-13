@@ -253,10 +253,6 @@ footer {
         padding: 0;
         overflow-x: hidden;
     }
-    
-    * {
-        box-sizing: border-box;
-    }
 
     #pageContainer {
         width: 100%;
@@ -268,72 +264,6 @@ footer {
     .nav__bar {
         width: 100%;
         max-width: 100%;
-    }
-
-    .searchBar {
-        width: 100%;
-        max-width: 100%;
-        padding: 0 20px;
-        margin: 0 auto;
-    }
-
-    .searchWrap {
-        position: relative;
-        width: 100%;
-    }
-
-    #searchInput {
-        width: 100%;
-        max-width: 100%;
-        height: 55px;
-        padding: 0 55px 0 20px;
-        box-sizing: border-box;
-        border-radius: 30px;
-    }
-
-    #searchBtn {
-        position: absolute;
-        right: 10px;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 45px;
-        height: 45px;
-        border: none;
-        background: transparent;
-        cursor: pointer;
-    }
-
-    #searchBtn i {
-        font-size: 25px;
-    }
-
-    .movieList {
-        display: grid;
-        width: 100%;
-        max-width: 100%;
-        grid-template-columns: repeat(2, 1fr);
-        gap:15px;
-        padding: 15px;
-    }
-
-    .movie-list__Container {
-        width: 100%;
-        min-width: 0;
-    }
-
-    .movie-list__Container img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-
-    .sortContainer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 8px;
-        margin: 20px 0;
-    }
 }
 
 /* Small Phone */
